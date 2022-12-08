@@ -32,7 +32,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
-            <Route path= "/" element={<Home />} />
+            <Route path= "/" element={<Home topics={topics}   />} />
             <Route path= "/about" element={<About />} />
         </Routes>
       </main>

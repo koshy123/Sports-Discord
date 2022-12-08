@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Home (){
+function Home ({topics}){
     return(
         <div>
             <h1>Welcome to our Webpage</h1>
