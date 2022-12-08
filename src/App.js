@@ -20,11 +20,14 @@ function App() {
     axios.request(getTopics).then(function (response) {
     setTopics(response.data);
     console.log(response.data)
+    console.log(response.data[0].image)
     setLoading(true);
   }).catch(function (error) {
      console.error(error);
   })
   }, [])
+
+ 
   
   
   return (
@@ -32,7 +35,7 @@ function App() {
       <Nav />
       <main>
         <Routes>
-            <Route path= "/" element={<Home topics={topics}   />} />
+            <Route path= "/" element={<Home topics={topics} />} />
             <Route path= "/about" element={<About />} />
         </Routes>
       </main>
