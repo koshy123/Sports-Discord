@@ -41,3 +41,9 @@
   text-align: center;
 }
 
+.imageMainPages{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+}
