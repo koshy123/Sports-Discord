@@ -30,5 +30,14 @@
   
 }
 
-
+.bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(17, 185, 43);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
