@@ -8,6 +8,7 @@ function Home({ topics }) {
       <div>
         <Link to={`/topics/${topic._id}`}>
           <img src={`${topic.image}`}/>
+          <h3>{`${topic.topic}`}</h3>
         </Link>
       </div>
     );
