@@ -2,12 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Home({ topics }) {
-  console.log(topics);
   const allTopics = topics.map((topic) => {
     return (
       <div>
         <Link to={`/topics/${topic._id}`}>
-          <img src='{topic.image}'/>
+          <img src={`${topic.image}`}/>
         </Link>
       </div>
     );
