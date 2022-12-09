@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Home({ topics }) {
-  console.log(topics);
   const allTopics = topics.map((topic) => {
     return (
       <div>
@@ -27,7 +26,7 @@ function Home({ topics }) {
           alt="Image of something"
         />
       </main>
-      <footer></footer>{" "}
+      <footer></footer>
     </>
   );
 }

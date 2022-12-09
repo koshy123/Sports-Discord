@@ -21,8 +21,6 @@ function App() {
       .request(getTopics)
       .then(function (response) {
         setTopics(response.data);
-        console.log(response.data);
-        console.log(response.data[0].image);
         setLoading(true);
       })
       .catch(function (error) {
@@ -39,7 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route
             path="/topics/:topicId"
-            element={<Topic topic={TOPIC_MOCK} />}
+            element={<Topic topics={topics} />}
           />
         </Routes>
       </main>
@@ -53,20 +51,3 @@ function App() {
 
 export default App;
 
-const TOPIC_MOCK = {
-  title: "Topic",
-  description: "Some article description",
-  imageUrl: "https://...",
-  comments: [
-    {
-      author: "John Smith",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda commodi sapiente sequi nemo quaerat hic asperiores provident ea quibusdam?",
-      createdAt: new Date(2022, 11, 8),
-    },
-    {
-      author: "John Smith",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum assumenda commodi sapiente sequi nemo quaerat hic asperiores provident ea quibusdam?",
-      createdAt: new Date(2022, 11, 9),
-    },
-  ],
-};
