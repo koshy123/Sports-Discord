@@ -7,14 +7,7 @@ function Home({ topics }) {
     return (
       <div>
         <Link to={`/topics/${topic._id}`}>
-          {/* <img
-            width="108"
-            height="108"
-            src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt5e33fd4ed3c4398d/629877b0f608d43e6c1c0b14/RonMessi.jpg"
-            alt="Image of something"
-          /> */}
           <img src='{topic.image}'/>
-          {console.log(topic.image)}
         </Link>
       </div>
     );
@@ -24,7 +17,7 @@ function Home({ topics }) {
     <>
       <main>
         <div className="photos">{allTopics}</div>
-        <h1>Welcome to Sports Discord</h1>
+        <h1 className="main-title">Welcome to Sports Discord</h1>
         <img
           className="square"
           width="408"
