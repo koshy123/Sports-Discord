@@ -7,13 +7,14 @@ function Home({ topics }) {
     return (
       <div>
         <Link to={`/topics/${topic._id}`}>
-          <img
+          {/* <img
             width="108"
             height="108"
             src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt5e33fd4ed3c4398d/629877b0f608d43e6c1c0b14/RonMessi.jpg"
             alt="Image of something"
-          />
-          {topic.image}
+          /> */}
+          <img src='{topic.image}'/>
+          {console.log(topic.image)}
         </Link>
       </div>
     );
