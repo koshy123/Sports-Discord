@@ -42,8 +42,7 @@ function App() {
         </Routes>
       </main>
       <footer className="bottom">
-        {" "}
-        @Copyright 2022 by Sports-Discord corporations.{" "}
+        @Copyright 2022 by Sports-Discord corporations.
       </footer>
     </div>
   );
