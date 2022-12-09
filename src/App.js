@@ -43,7 +43,7 @@ function App() {
           />
         </Routes>
       </main>
-      <footer> @Copyright 2022 by Sports-Discord corporations </footer>
+      <footer> @Copyright 2022 by Sports-Discord corporations. </footer>
     </div>
   );
 }
