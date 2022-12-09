@@ -6,7 +6,7 @@ function Home({ topics }) {
   const allTopics = topics.map((topic) => {
     return (
       <div>
-        <Link to="/some-other-page">
+        <Link to={`/topics/${topic._id}`}>
           <img
             width="108"
             height="108"
