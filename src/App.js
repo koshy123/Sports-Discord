@@ -51,7 +51,7 @@ function App() {
 export default App;
 
 const TOPIC_MOCK = {
-  title: "Some fake title",
+  title: "Topic",
   description: "Some article description",
   imageUrl: "https://...",
   comments: [
