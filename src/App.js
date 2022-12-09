@@ -43,6 +43,7 @@ function App() {
           />
         </Routes>
       </main>
+      <footer> @Copyright by Sports-Discord corporations -if you dont know know you know-</footer>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Nav (){
    
         return(
-            <header className = "Header">
+            <header className = "nav-header">
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                </header>
