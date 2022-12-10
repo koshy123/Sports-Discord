@@ -15,7 +15,6 @@ function App() {
     method: "GET",
     url: "https://sports-discord.fly.dev/api/topics",
   };
-
   useEffect(() => {
     axios
       .request(getTopics)
@@ -27,7 +26,6 @@ function App() {
         console.error(error);
       });
   }, []);
-
   return (
     <div className="App">
       <Nav />
@@ -47,6 +45,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
