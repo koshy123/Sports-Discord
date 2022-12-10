@@ -1,0 +1,7 @@
+Planning 
+
+
+For the front end we can should first have our backend completed. Then we can have routers and axios installed.
+Then we can have axios call to have our data coming in the from the backend. When we have our data coming in from the backend
+we need to route them. So we are going to have three pages. One is the about page, another is the home page last one is our id page where we will have our data routed using 
+another component for adding, editing/update and deleting data that we getting from our backend. We will be using driver method and will be using git branches.
