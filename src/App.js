@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import Update from "./Update";
 
 import Home from "./Home";
 import Nav from "./Nav";

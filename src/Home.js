@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Create from "./Create";
+import Update from "./Update";
 
 function Home({ topics }) {
   const allTopics = topics.map((topic) => {
@@ -28,6 +29,7 @@ function Home({ topics }) {
         />
         <div className="photos">{allTopics}</div>
         <Create/>
+       
       </main>
       <footer></footer>
     </>
