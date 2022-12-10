@@ -8,7 +8,6 @@ import Home from "./Home";
 import Nav from "./Nav";
 import About from "./About";
 import Topic from "./Topic";
-import Create from "./Create";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -33,7 +32,6 @@ function App() {
     <div className="App">
       <Nav />
       <main>
-      <Create/>
         <Routes>
           <Route path="/" element={<Home topics={topics} />} />
           <Route path="/about" element={<About />} />

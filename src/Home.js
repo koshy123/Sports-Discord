@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Create from "./Create";
+
 function Home({ topics }) {
   const allTopics = topics.map((topic) => {
     return (
@@ -16,8 +18,9 @@ function Home({ topics }) {
   return (
     <>
       <main>
+      <h1 className="main-title">Welcome to Sports Discord</h1>
         <div className="photos">{allTopics}</div>
-        <h1 className="main-title">Welcome to Sports Discord</h1>
+        <Create/>
         <img
           className="square"
           width="408"
