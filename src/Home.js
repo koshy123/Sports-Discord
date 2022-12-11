@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import Create from "./Create";
 import Update from "./Update";
+import Image from "./main_final.png";
 
 function Home({ topics }) {
   const allTopics = topics.map((topic) => {
@@ -10,7 +11,7 @@ function Home({ topics }) {
       <div>
         <Link to={`/topics/${topic._id}`}>
           <img className="imageMainPages" src={`${topic.image}`} />
-          <h3>{`${topic.topic}`}</h3>
+          <h3 className="nameTopic">{`${topic.topic}`}</h3>
         </Link>
       </div>
     );
@@ -22,9 +23,9 @@ function Home({ topics }) {
         <div className="title">
           <img
             className="square"
-            width="800"
+            width="1400"
             height="400"
-            src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1194.jpg?w=2000"
+            src={Image}
             alt="Image of something"
           />
           <div className="main-title">Welcome to</div>
