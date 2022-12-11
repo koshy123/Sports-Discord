@@ -11,17 +11,14 @@ export default function Update() {
    image: "",
  });
 
-
 function updateForm(value) {
    return setForm((prev) => {
      return { ...prev, ...value };
    });
  }
 
-
  async function handleDelete (event) {
   event.preventDefault()
-  console.log(params.topicId);
 
   await fetch(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, {
      method: "DELETE",
@@ -31,6 +28,8 @@ function updateForm(value) {
    });
    navigate("/");
 }
+
+
  async function onSubmit(e) {
    e.preventDefault();
    const editedTopic = {
@@ -38,10 +37,11 @@ function updateForm(value) {
      comments: form.comments,
      image: form.image,
    };
+
  console.log(editedTopic)
- console.log(params.id)
+ console.log(params.topicId)
    // This will send a post request to update the data in the database.
-   await fetch(`https://sports-discord.fly.dev/api/topics/${params.id}`, {
+   await fetch(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, {
      method: "PUT",
      body: JSON.stringify(editedTopic),
      headers: {
