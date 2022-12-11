@@ -1,6 +1,7 @@
 .App {
   text-align: center;
-  background-color: blanchedalmond;
+  background-color: #090017;
+  color: white;
 }
 body{
   min-height: 400px;
@@ -14,18 +15,34 @@ body{
   display: flex;
   justify-content: space-around;
   font-size: 30px;
-  background-color: black;
+  background-color: #110426;
 }
 
 .nav-titles{
   text-decoration: none;
-  color: white;
+  color:  #FF5400;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Home.js */
 .main-title{
+  color: white;
   font-family: inherit;
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  position:absolute;
+  top: 178px;
+  left: 136px;
+}
+.subtitle{
+  color: #FF5400; 
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  position:absolute;
+  top: 218px;
+  left: 136px;
 }
 .imageMainPages{
   display: flex;
@@ -51,7 +68,7 @@ body{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(17, 185, 43);
+  background-color: #110426;
   color: white;
   padding: 20px;
   text-align: center;

@@ -19,16 +19,19 @@ function Home({ topics }) {
   return (
     <>
       <main>
-      <h1 className="main-title">Welcome to Sports Discord</h1>
-      <img
-          className="square"
-          width="400"
-          height="300"
-          src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1194.jpg?w=2000"
-          alt="Image of something"
-        />
-        <Create/>
-        <div className="photos">{allTopics}</div>       
+        <div className="title">
+          <img
+            className="square"
+            width="800"
+            height="400"
+            src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1194.jpg?w=2000"
+            alt="Image of something"
+          />
+          <div className="main-title">Welcome to</div>
+          <div className="subtitle">Sports Discord</div>
+        </div>
+        <Create />
+        <div className="photos">{allTopics}</div>
       </main>
       <footer></footer>
     </>
