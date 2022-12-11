@@ -2,21 +2,43 @@
   text-align: center;
   background-color: blanchedalmond;
 }
+body{
+  min-height: 400px;
+  margin-bottom: 50px;
+  clear: both;
+}
 
+
+
+/* Nav */
 .nav-header{
   display: flex;
   justify-content: space-around;
   font-size: 30px;
   background-color: black;
 }
-.main-title{
-  font-family: inherit;
 
+.nav-titles{
+  text-decoration: none;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Home.js */
+.main-title{
+  font-family: inherit;
+}
+.imageMainPages{
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+}
+.photos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .square {
@@ -24,13 +46,6 @@
      
 }
 
-.photos{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  
-}
 
 .bottom {
   position: fixed;
@@ -43,15 +58,3 @@
   text-align: center;
 }
 
-.imageMainPages{
-  display: flex;
-  justify-content: space-around;
-  width: 200px;
-  height: 200px;
-}
-
-.nav-titles{
-  text-decoration: none;
-  color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
