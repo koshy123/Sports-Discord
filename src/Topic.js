@@ -8,8 +8,9 @@ function Topic({ topics }) {
 
     return (
       <div key= {oneTopic._id} >
-       <h3>
-        {`${oneTopic.comments}`}</h3>
+       <h1>{`${oneTopic.topic}`}</h1>
+       <img className="imageTopicPages" src={`${oneTopic.image}`} />
+       <h3>{`${oneTopic.comments}`}</h3>
         <Update />
       </div>
       
