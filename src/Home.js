@@ -22,14 +22,13 @@ function Home({ topics }) {
       <h1 className="main-title">Welcome to Sports Discord</h1>
       <img
           className="square"
-          width="408"
-          height="508"
+          width="400"
+          height="300"
           src="https://img.freepik.com/free-photo/soccer-players-action-professional-stadium_654080-1194.jpg?w=2000"
           alt="Image of something"
         />
-        <div className="photos">{allTopics}</div>
         <Create/>
-       
+        <div className="photos">{allTopics}</div>       
       </main>
       <footer></footer>
     </>

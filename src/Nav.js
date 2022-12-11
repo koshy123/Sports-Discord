@@ -8,8 +8,8 @@ function Nav (){
    
         return(
             <header className = "nav-header">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
+                <Link className="nav-titles" to="/">Home</Link>
+                <Link className="nav-titles"  to="/about">About</Link>
                </header>
         )
    
