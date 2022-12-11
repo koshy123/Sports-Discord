@@ -1,25 +1,29 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router";
 
 export default function Update() {
+ const params = useParams();
+ const navigate = useNavigate();
+
  const [form, setForm] = useState({
    topic: "",
    comments: "",
-   image: '',
-   records: [],
+   image: "",
  });
- const params = useParams();
- const navigate = useNavigate();
- console.log(params)
- function updateForm(value) {
+
+
+function updateForm(value) {
    return setForm((prev) => {
      return { ...prev, ...value };
    });
  }
+
+
  async function handleDelete (event) {
   event.preventDefault()
-  console.log(params.id);
-  await fetch(`https://sports-discord.fly.dev/api/topics/${params.id}`, {
+  console.log(params.topicId);
+
+  await fetch(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, {
      method: "DELETE",
      headers: {
        'Content-Type': 'application/json'
