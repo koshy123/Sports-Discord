@@ -10,5 +10,5 @@ Dividing up our roles. Max is looking up some UX features and how to make our ap
 
 
 December 11th
-Questions - How to adjust bottom header to not cover the page. Also to allow changes to happen live, without refreshing the page.
+Questions - Allow changes to happen live, without refreshing the page.
 We also want the comments to be an array, so that we can add and delete comments in the array.
