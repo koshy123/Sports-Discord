@@ -130,6 +130,29 @@ body{
     flex-direction: column;
     color: #FF63BB;
   }
+  .main-title{
+    color: white;
+    font-family: inherit;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    top: 178px;
+    left: 96px;
+  }
+  .subtitle{
+    color: #FF5400; 
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    top: 240px;
+    left: 96px;
+  }
+.mainPhoto {
+  height:250px;
+}
+  
 
 }
 
