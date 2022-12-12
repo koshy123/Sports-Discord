@@ -21,7 +21,7 @@ function Home({ topics, setTopics }) {
     <>
       <div className="title">
         <img
-          // className="square"
+          // className="squares"
           // width="1400"
           height="400"
           src={Image}

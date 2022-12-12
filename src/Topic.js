@@ -20,7 +20,7 @@ function Topic({ topics, setTopics }) {
   // return (
   //     <main>
   //       <h1>{oneTopic}</h1>
-  //     </main>
+  //     </mains>
   // );
 }
 

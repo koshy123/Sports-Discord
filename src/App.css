@@ -170,7 +170,7 @@ body{
   cursor: pointer;
   color: white;
   background-color: #FF5400;
-  font-weight: 600;
+  font-weight: 500;
   transition: transform 250ms ease-in-out;
   border: none;
 }
