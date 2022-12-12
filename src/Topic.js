@@ -8,16 +8,14 @@ function Topic({ topics, setTopics }) {
 
     return (
       <div key= {oneTopic._id} >
-<<<<<<< HEAD
        <h1>{`${oneTopic.topic}`}</h1>
        <img className="imageTopicPages" src={`${oneTopic.image}`} />
        <h3>{`${oneTopic.comments}`}</h3>
         <Update />
-=======
+
        <h3>
         {`${oneTopic.comments}`}</h3>
         <Update setTopics={setTopics} />
->>>>>>> df03100 (able to make put and delete live repeate, still fixing the create)
       </div>
       
     );
