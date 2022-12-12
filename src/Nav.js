@@ -4,7 +4,7 @@ import Logo from "./giphy.mp4";
 
 function Nav() {
   return (
-    <nav className="nav-header">
+    <nav className="nav-header" style={{ paddingBlock: "2rem" }}>
       <Link
         to="/"
         style={{

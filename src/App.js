@@ -30,11 +30,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ maxWidth: 1000, margin: "0 auto" }}>
       <Nav />
       <main>
         <Routes>
-          <Route path="/" element={<Home topics={topics} setTopics={setTopics} />} />
+          <Route
+            path="/"
+            element={<Home topics={topics} setTopics={setTopics} />}
+          />
           <Route path="/about" element={<About />} />
           <Route
             path="/topics/:topicId"
@@ -49,4 +52,3 @@ function App() {
   );
 }
 export default App;
-
