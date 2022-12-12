@@ -3,11 +3,10 @@ import { Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Topic from "./components/Topic";
+import Topic from "./components/components/Topic";
 
 function App() {
   const [loading, setLoading] = useState(false);
