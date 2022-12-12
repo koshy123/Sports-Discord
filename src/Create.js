@@ -45,6 +45,8 @@ export default function Create({topics, setTopics}) {
     //   }
       async function onSubmit(e) {
         console.log(setTopics)
+        e.preventDefault()
+
 
         const newTopic = { ...form };
 
