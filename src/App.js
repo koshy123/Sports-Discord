@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App" style={{ maxWidth: 1000, margin: "0 auto" }}>
       <Nav />
-      <main>
+      <main className="mainPage">
         <Routes>
           <Route
             path="/"
