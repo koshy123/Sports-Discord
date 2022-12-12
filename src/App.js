@@ -2,12 +2,12 @@ import "./css/App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Update from "./Update";
+
 
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Topic from "./Topic";
+import Topic from "./components/Topic";
 
 function App() {
   const [loading, setLoading] = useState(false);
