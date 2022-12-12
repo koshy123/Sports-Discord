@@ -90,7 +90,7 @@ function updateForm(value) {
          />
        </div>
        <div className="delete">
-                <button className="pointerTwo" onClick={handleDelete}>Delete</button>
+                <button className="pointerTwo" onClick={handleDelete}>🗑️</button>
         </div>
      </form>
    </div>
