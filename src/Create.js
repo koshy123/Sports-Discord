@@ -118,15 +118,15 @@ export default function Create({ setTopics }) {
           <div className="form-group-button">
             <button
               className="create-button"
-              // style={{
-              //   borderRadius: 20,
-              //   color: white,
-              //   background-color: red,
-              //   fontSize: "1.5rem",
-              //   padding: "0.75rem 1.25rem",
-              // }}
+              style={{
+                borderRadius: 20,
+                color: white,
+                background-color: red,
+                fontSize: "1.5rem",
+                padding: "0.75rem 1.25rem",
+              }}
               type="submit"
-              // className="pointer"
+              className="pointer"
             >
               Create Topic
             </button>
