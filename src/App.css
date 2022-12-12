@@ -15,17 +15,17 @@ body{
   color: white;
   font-family: inherit;
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   top: 420px;
-  left: 136px;
+  left: 66px;
 
 }
 
 .topic{
   color: #FF5400; 
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   top: 0px;
   left: 106px;
@@ -35,9 +35,11 @@ body{
 .nav-header{
   display: flex;
   justify-content: space-around;
-  font-size: 30px;
-  background-color: #110426;
-  
+  font-size: 60px;
+  background-color: #090017;
+ 
+  left: 0;
+  bottom: 0;
 }
 
 .logo{
@@ -117,39 +119,7 @@ body{
 
 /*topic*/
 
-.imageTopicPages{
-  width: 300px;
-  height: 300px;
-  border-radius: 20px;
-  
-}
 
-.buttonTopic{
-  border-radius: 30px;
-  font-size: 20px;
-  padding: 10px 10px;
-  cursor: pointer;
-  color: white;
-  background-color: red;
-  font-weight: 400;
-}
-
-
-.form-topic{
-  border-radius:30px;
-  font-size: 20px;
-  text-align: center;
-  gap:1rem;
-  width: 150px;
-  
-}
-
-.topicTitle{
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: underline;
-  
-}
 /* Create */
 .form-group-button {
   border-radius: 50px;
