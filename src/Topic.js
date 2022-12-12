@@ -10,8 +10,7 @@ function Topic({ topics, setTopics }) {
       <div key= {oneTopic._id} >
        <h1>{`${oneTopic.topic}`}</h1>
        <img className="imageTopicPages" src={`${oneTopic.image}`} />
-       <h3>
-        {`${oneTopic.comments}`}</h3>
+       <h3>{`${oneTopic.comments}`}</h3>
         <Update setTopics={setTopics} />
       </div>
       

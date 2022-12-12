@@ -55,30 +55,33 @@ function updateForm(value) {
          <label htmlFor="topic">Topic: </label>
          <input
            type="text"
-           className="form-control"
+           className="form-topic"
            id="topic"
            value={form.topic}
            onChange={(e) => updateForm({ topic: e.target.value })}
+           placeholder="Topic"
          />
        </div>
        <div className="form-group">
          <label htmlFor="comments">comments: </label>
          <input
            type="text"
-           className="form-control"
+           className="form-topic"
            id="comments"
            value={form.comments}
            onChange={(e) => updateForm({ comments: e.target.value })}
+           placeholder="comments"
          />
        </div>
        <div className="form-group">
          <label htmlFor="image">image: </label>
          <input
            type="text"
-           className="form-control"
+           className="form-topic"
            id="image"
            value={form.image}
            onChange={(e) => updateForm({ image: e.target.value })}
+           placeholder="image"
          />
        </div>
        <br />
@@ -86,11 +89,11 @@ function updateForm(value) {
          <input
            type="submit"
            value="Update Topic"
-           className="pointerTwo"
+           className="buttonTopic"
          />
        </div>
        <div className="delete">
-                <button className="pointerTwo" onClick={handleDelete}>🗑️</button>
+                <button className="buttonTopic" onClick={handleDelete}>🗑️</button>
         </div>
      </form>
    </div>
