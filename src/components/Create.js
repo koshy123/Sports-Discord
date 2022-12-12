@@ -67,7 +67,7 @@ export default function Create({topics, setTopics}) {
     return (
       <div>
         <h3 className="titleLine">Create-A-Topic</h3>
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit}  >
           <div className="form-group">
             <label htmlFor="topic">Topic</label>
             <input

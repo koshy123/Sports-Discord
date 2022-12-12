@@ -32,7 +32,7 @@ function Home({ topics, setTopics }) {
         <div className="main-title">Welcome to</div>
         <div className="subtitle">Sports Discord</div>
       </div>
-      <Create setTopics={setTopics} />
+      <Create setTopics={setTopics}  />
       <div className="photos">{allTopics}</div>
     </>
   );

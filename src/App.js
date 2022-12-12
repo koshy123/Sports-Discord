@@ -26,7 +26,7 @@ function App() {
       .catch(function (error) {
         console.error(error);
       });
-  }, []);
+  }, [topics]);
 
   return (
     <div className="App" style={{ maxWidth: 1000, margin: "0 auto" }}>
