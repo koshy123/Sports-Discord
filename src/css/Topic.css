@@ -1,0 +1,37 @@
+
+  
+  /*topic*/
+  
+  .imageTopicPages{
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    
+  }
+  
+  .buttonTopic{
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    font-weight: 500;
+  }
+  
+  
+  .form-topic{
+    border-radius:30px;
+    font-size: 20px;
+    text-align: center;
+    gap:1rem;
+    width: 150px;
+    
+  }
+  
+  .topicTitle{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    
+  }
