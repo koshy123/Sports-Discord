@@ -9,17 +9,37 @@ body{
   clear: both;
 }
 
+.titleLine{
+  color: white;
+  font-family: inherit;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  top: 420px;
+  left: 136px;
 
+}
+
+.topic{
+  color: #FF5400; 
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  top: 0px;
+  left: 106px;
+
+}
 /* Nav */
 .nav-header{
   display: flex;
   justify-content: space-around;
   font-size: 30px;
   background-color: #110426;
+  text-decoration: none;
 }
 
 .logo{
-  position:absolute;
+  
   top: 1px;
   left: 125px;
   height: 22px;
