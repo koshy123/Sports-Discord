@@ -21,7 +21,10 @@ function Home({ topics, setTopics }) {
     <>
       <div className="title">
         <img
-          // className="squares"
+
+          className="mainPhoto"
+          // className="square"
+
           // width="1400"
           height="400"
           src={Image}
