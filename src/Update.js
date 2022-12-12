@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router";
+import axios from "axios";
 
-export default function Update() {
+
+export default function Update({setTopics}) {
  const params = useParams();
  const navigate = useNavigate();
 
@@ -20,37 +22,31 @@ function updateForm(value) {
  async function handleDelete (event) {
   event.preventDefault()
 
-  await fetch(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, {
-     method: "DELETE",
-     headers: {
-       'Content-Type': 'application/json'
-     },
-   });
-   navigate("/");
+  
+  const topics = await axios.delete(`http://localhost:4000/api/topics/${params.topicId}`);
+   setTopics(topics.data)
+   navigate('/')
 }
 
 
  async function onSubmit(e) {
+
    e.preventDefault();
    const editedTopic = {
      topic: form.topic,
      comments: form.comments,
      image: form.image,
    };
+   console.log(editedTopic)
+  const update = await axios.put(`http://localhost:4000/api/topics/${params.topicId}`, editedTopic );
+  setTopics(update.data)
+  navigate("/");
+  }
 
- console.log(editedTopic)
- console.log(params.topicId)
-   // This will send a post request to update the data in the database.
-   await fetch(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, {
-     method: "PUT",
-     body: JSON.stringify(editedTopic),
-     headers: {
-       'Content-Type': 'application/json'
-     },
-   });
-   navigate("/");
- }
- // This following section will display the form that takes input from the user to update the data.
+
+
+
+  
  return (
    <div>
      <p className="topicTitle">Edit Topic</p>

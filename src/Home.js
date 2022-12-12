@@ -5,7 +5,7 @@ import Create from "./Create";
 import Update from "./Update";
 import Image from "./main_final.png";
 
-function Home({ topics }) {
+function Home({ topics, setTopics }) {
   const allTopics = topics.map((topic) => {
     return (
       <div>
@@ -31,7 +31,7 @@ function Home({ topics }) {
           <div className="main-title">Welcome to</div>
           <div className="subtitle">Sports Discord</div>
         </div>
-        <Create />
+        <Create setTopics={setTopics} />
         <div className="photos">{allTopics}</div>
       </main>
       <footer></footer>

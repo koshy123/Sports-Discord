@@ -15,7 +15,7 @@ function App() {
 
   const getTopics = {
     method: "GET",
-    url: "https://sports-discord.fly.dev/api/topics",
+    url: "http://localhost:4000/api/topics/",
   };
   useEffect(() => {
     axios
@@ -28,16 +28,17 @@ function App() {
         console.error(error);
       });
   }, []);
+
   return (
     <div className="App">
       <Nav />
       <main>
         <Routes>
-          <Route path="/" element={<Home topics={topics} />} />
+          <Route path="/" element={<Home topics={topics} setTopics={setTopics} />} />
           <Route path="/about" element={<About />} />
           <Route
             path="/topics/:topicId"
-            element={<Topic topics={topics} />}
+            element={<Topic topics={topics} setTopics={setTopics} />}
           />
         </Routes>
       </main>

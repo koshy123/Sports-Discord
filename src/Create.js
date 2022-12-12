@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
+import axios from "axios";
 
 
-export default function Create() {
+export default function Create({setTopics}) {
+
+
     const [form, setForm] = useState({
       topic: "",
       comments: "",
@@ -17,29 +20,30 @@ export default function Create() {
       });
     }
     
-   
+
     async function onSubmit(e) {
-      e.preventDefault();
-    
-     
-      const newTopic = { ...form };
-    
-      await fetch("https://sports-discord.fly.dev/api/topics", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newTopic),
-      })
-      .catch(error => {
-        window.alert(error);
-        return;
-      });
-    
-      setForm({ topic: "", comments: "", image: "" });
-      navigate("/");
-    }
-    
+        e.preventDefault();
+      
+       
+        const newTopic = { ...form };
+      
+        await fetch("https://sports-discord.fly.dev/api/topics", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTopic),
+        })
+        .catch(error => {
+          window.alert(error);
+          return;
+        });
+      
+        setForm({ topic: "", comments: "", image: "" });
+        navigate("/");
+      }
+   
+
     // This following section will display the form that takes the input from the user.
     return (
       <div>
