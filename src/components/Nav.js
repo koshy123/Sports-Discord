@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "./giphy.mp4";
+import Logo from "../images/giphy.mp4";
+import "../css/Nav.css";
 
 function Nav() {
   return (

@@ -1,6 +1,7 @@
 import React from "react";
 import {useParams} from "react-router-dom"
 import Update from "./Update";
+import "../css/Topic.css";
 
 function Topic({ topics, setTopics }) {
   const {topicId} = useParams()

@@ -1,12 +1,12 @@
-import "./App.css";
+import "./css/App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Update from "./Update";
 
-import Home from "./Home";
-import Nav from "./Nav";
-import About from "./About";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
+import About from "./components/About";
 import Topic from "./Topic";
 
 function App() {

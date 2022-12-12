@@ -1,0 +1,27 @@
+/* Nav */
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    font-size: 60px;
+    background-color: #090017;
+   
+    left: 0;
+    bottom: 0;
+  }
+  
+  .logo{
+    
+    top: 1px;
+    left: 125px;
+    height: 22px;
+  }
+  .logoName{
+    color: #FF5400; 
+    font-size: 20px;
+  }
+  .nav-titles{
+    text-decoration: none;
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+  }

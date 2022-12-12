@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  color: white;
+}
+
+body{
+  min-height: 400px;
+  background-color: #090017;
+  
+  margin-bottom: 50px;
+  clear: both;
+}
+
+.titleLine{
+  color: white;
+  font-family: inherit;
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  top: 420px;
+  left: 66px;
+
+}
+
+.topic{
+  color: #FF5400; 
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  top: 0px;
+  left: 106px;
+
+}
+
+
+
+
+/*topic*/
+
+
+/* Create */
+.form-group-button {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    color: #FF63BB;
+  }
+  .main-title{
+    color: white;
+    font-family: inherit;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    top: 178px;
+    left: 96px;
+  }
+  .subtitle{
+    color: #FF5400; 
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    position:absolute;
+    top: 240px;
+    left: 96px;
+  }
+.mainPhoto {
+  height:250px;
+}
+  
+
+}
+
+.create-button {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  color: white;
+  background-color: #FF5400;
+  font-weight: 500;
+  transition: transform 250ms ease-in-out;
+  border: none;
+}
+
+.create-button:hover {
+  background-color: #25005F;
+  transform: scale(1.25);
+}
+
+
+body{
+  min-height: 400px;
+  background-color: #090017;
+  
+  margin-bottom: 50px;
+  clear: both;
+}

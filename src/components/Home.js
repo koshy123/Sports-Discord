@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import Create from "./Create";
-import Update from "./Update";
-import Image from "./main_final.png";
+import Update from "../Update";
+import Image from "../images/main_final.png";
+import "../css/Home.css";
+
 
 function Home({ topics, setTopics }) {
   const allTopics = topics.map((topic) => {
