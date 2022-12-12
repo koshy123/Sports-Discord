@@ -19,22 +19,19 @@ function Home({ topics, setTopics }) {
 
   return (
     <>
-      <main>
-        <div className="title">
-          <img
-            className="square"
-            width="1400"
-            height="400"
-            src={Image}
-            alt="Image of something"
-          />
-          <div className="main-title">Welcome to</div>
-          <div className="subtitle">Sports Discord</div>
-        </div>
-        <Create setTopics={setTopics} />
-        <div className="photos">{allTopics}</div>
-      </main>
-      <footer></footer>
+      <div className="title">
+        <img
+          // className="square"
+          // width="1400"
+          height="400"
+          src={Image}
+          alt="Image of something"
+        />
+        <div className="main-title">Welcome to</div>
+        <div className="subtitle">Sports Discord</div>
+      </div>
+      <Create setTopics={setTopics} />
+      <div className="photos">{allTopics}</div>
     </>
   );
 }

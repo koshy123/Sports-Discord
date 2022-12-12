@@ -1,10 +1,12 @@
 .App {
   text-align: center;
-  background-color: #090017;
   color: white;
 }
+
 body{
   min-height: 400px;
+  background-color: #090017;
+  
   margin-bottom: 50px;
   clear: both;
 }
@@ -35,7 +37,7 @@ body{
   justify-content: space-around;
   font-size: 30px;
   background-color: #110426;
-  text-decoration: none;
+  
 }
 
 .logo{
@@ -117,4 +119,33 @@ body{
 
 .deleteButton{
   
+}
+/* Create */
+.form-group-button {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    color: #FF63BB;
+  }
+
+}
+
+.create-button {
+  border-radius: 50px;
+  font-size: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  color: white;
+  background-color: #FF5400;
+  font-weight: 600;
+  transition: transform 250ms ease-in-out;
+  border: none;
+}
+
+.create-button:hover {
+  background-color: #25005F;
+  transform: scale(1.25);
 }
