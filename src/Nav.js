@@ -4,18 +4,28 @@ import Logo from "./giphy.mp4";
 
 function Nav() {
   return (
-    <header className="nav-header">
-      <div className="logoName">Sports Dicsord</div>
-      <Link to="/">
+    <nav className="nav-header">
+      <Link
+        to="/"
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          textDecoration: "none",
+        }}
+      >
         <video className="logo" src={Logo} autoPlay muted loop></video>
+        <span className="logoName">Sports Dicsord</span>
       </Link>
-      <Link className="nav-titles" to="/">
-        Home
-      </Link>
-      <Link className="nav-titles" to="/about">
-        About
-      </Link>
-    </header>
+      <div style={{ display: "flex", gap: "3rem" }}>
+        <Link className="nav-titles" to="/">
+          Home
+        </Link>
+        <Link className="nav-titles" to="/about">
+          About
+        </Link>
+      </div>
+    </nav>
   );
 }
 
