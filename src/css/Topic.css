@@ -15,7 +15,7 @@
     padding: 10px 10px;
     cursor: pointer;
     color: white;
-    background-color: red;
+    background-color: #ff5400;
     font-weight: 500;
   }
   
@@ -23,6 +23,8 @@
   .form-topic{
     border-radius:30px;
     font-size: 20px;
+    background-color: blueviolet;
+    color: white;
     text-align: center;
     gap:1rem;
     width: 150px;
@@ -33,5 +35,10 @@
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
+    color:#ff5400;
     
+  }
+
+  #comments{
+    margin-right: 30px;
   }

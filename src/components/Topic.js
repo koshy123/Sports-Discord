@@ -16,13 +16,6 @@ function Topic({ topics, setTopics }) {
       </div>
       
     );
-
-
-  // return (
-  //     <main>
-  //       <h1>{oneTopic}</h1>
-  //     </mains>
-  // );
 }
 
 export default Topic;
