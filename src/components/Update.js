@@ -26,7 +26,7 @@ function updateForm(value) {
   event.preventDefault()
 
   
-  const topics = await axios.delete(`http://localhost:4000/api/topics/${params.topicId}`);
+  const topics = await axios.delete(`https://sports-discord.fly.dev/api/topics/${params.topicId}`);
    setTopics(topics.data)
    navigate('/')
 }
@@ -41,7 +41,7 @@ function updateForm(value) {
      image: form.image,
    };
    console.log(editedTopic)
-  const update = await axios.put(`https://sports-discord.fly.dev/api/topics${params.topicId}`, editedTopic );
+  const update = await axios.put(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, editedTopic );
   setTopics(update.data)
   navigate("/");
   }
@@ -126,7 +126,7 @@ function updateForm(value) {
        </div>
 
 
-  <button onClick={e => onPress(e)}> Click</button>
+  <button className="clicksbutton" onClick={e => onPress(e)}> Click</button>
     
 
 

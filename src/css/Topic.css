@@ -23,8 +23,8 @@
   .form-topic{
     border-radius:30px;
     font-size: 20px;
-    background-color: blueviolet;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     gap:1rem;
     width: 150px;
@@ -42,3 +42,4 @@
   #comments{
     margin-right: 30px;
   }
+
