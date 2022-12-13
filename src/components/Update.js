@@ -48,7 +48,7 @@ function updateForm(value) {
 
   
   async function onPress(e) {
-
+    console.log({comment})
     e.preventDefault();
    const update = await axios.put(`https://sports-discord.fly.dev/api/topics/addComment/${params.topicId}` , {comment});
    console.log(update.data)
