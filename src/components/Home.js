@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Create from "./Create";
 
-import Image from "../images/main_final.png";
+import Image from "../images/main_v03.png";
 import "../css/Home.css";
 
 function Home({ topics, setTopics }) {
