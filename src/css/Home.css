@@ -18,6 +18,33 @@
   top: 230px;
   left: 136px;
 }
+.subtitle2 {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 300px;
+  left: 136px;
+}
+.subtitle3 {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 320px;
+  left: 136px;
+}
+.subtitle4 {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: 340px;
+  left: 136px;
+}
 .imageMainPages {
   display: flex;
   justify-content: space-around;
@@ -75,5 +102,32 @@
   }
   .mainPhoto {
     height: 250px;
+  }
+  .subtitle2 {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 96px;
+  }
+  .subtitle3 {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 320px;
+    left: 96px;
+  }
+  .subtitle4 {
+    color: white;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 340px;
+    left: 96px;
   }
 }
