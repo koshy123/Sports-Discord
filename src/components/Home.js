@@ -31,8 +31,11 @@ function Home({ topics, setTopics }) {
         />
         <div className="main-title">Welcome to</div>
         <div className="subtitle">Sports Discord</div>
+        <div className="subtitle2">Sport Discord is a place to discuss,</div>
+        <div className="subtitle3">share, and just talk about sport</div>
+        <div className="subtitle4">organised into topic-based themes</div>
       </div>
-      <Create setTopics={setTopics}  />
+      <Create setTopics={setTopics} />
       <div className="photos">{allTopics}</div>
     </>
   );
