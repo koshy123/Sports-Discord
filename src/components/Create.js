@@ -34,20 +34,12 @@ export default function Create({ topics, setTopics }) {
   //       return;
   //     });
 
-
   //     setForm({ topic: "", comments: "", image: "" });
   //     navigate("/");
   //   }
   async function onSubmit(e) {
     console.log(setTopics);
     e.preventDefault();
-
-       const update = await axios.post(`https://sports-discord.fly.dev/api/topics`, newTopic);
-  
-  
-       setForm({ topic: "", comments: "", image: "" });
-       navigate("/");
-       }
 
 
     const newTopic = { ...form };
