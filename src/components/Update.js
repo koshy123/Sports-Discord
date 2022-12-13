@@ -13,6 +13,9 @@ export default function Update({setTopics}) {
    image: "",
  });
 
+ const [comment, setComment] = useState("");
+
+
 function updateForm(value) {
    return setForm((prev) => {
      return { ...prev, ...value };
@@ -42,6 +45,17 @@ function updateForm(value) {
   setTopics(update.data)
   navigate("/");
   }
+
+  
+  async function onPress(e) {
+
+    e.preventDefault();
+   const update = await axios.put(`http://localhost:4000/api/topics/addComment/${params.topicId}` , {comment});
+   console.log(update.data)
+   setTopics(update.data)
+   setComment('')
+   }
+ 
 
 
 
@@ -96,10 +110,28 @@ function updateForm(value) {
                 <button className="buttonTopic" onClick={handleDelete}>🗑️</button>
         </div>
      </form>
+
+
+ 
+  <div className="form-group">
+         <label >comments: </label>
+         <input
+           type="text"
+           className="form-topic"
+           id="comments"
+           value={comment}
+           onChange={(e) => setComment(e.target.value )}
+           placeholder="comments"
+         />
+       </div>
+
+
+  <button onClick={e => onPress(e)}> Click</button>
+    
+
+
    </div>
  );
 }
 
 
-
-//j
