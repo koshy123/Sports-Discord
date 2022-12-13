@@ -29,7 +29,7 @@ function App() {
   }, [topics]);
 
   return (
-    <div className="App" style={{ maxWidth: 1000, margin: "0 auto" }}>
+    <div className="App">
       <Nav />
       <main className="mainPage">
         <Routes>
@@ -44,9 +44,7 @@ function App() {
           />
         </Routes>
       </main>
-      <footer className="bottom">
-        @Copyright 2022 by Sports-Discord corporations.
-      </footer>
+      <footer className="bottom">2022</footer>
     </div>
   );
 }

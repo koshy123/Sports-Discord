@@ -1,113 +1,108 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import axios from "axios";
+import "../css/Create.css";
 
+export default function Create({ topics, setTopics }) {
+  const [form, setForm] = useState({
+    topic: "",
+    comments: "",
+    image: "",
+  });
+  const navigate = useNavigate();
 
-
-export default function Create({topics, setTopics}) {
-
-
-    const [form, setForm] = useState({
-      topic: "",
-      comments: "",
-      image: "",
+  function updateForm(value) {
+    return setForm((prev) => {
+      return { ...prev, ...value };
     });
-    const navigate = useNavigate();
-    
-   
-    function updateForm(value) {
-      return setForm((prev) => {
-        return { ...prev, ...value };
-      });
-    }
-    
+  }
 
-    // async function onSubmit(e) {
-    //     e.preventDefault();
-      
-       
-    //     const newTopic = { ...form };
-      
-    //     await fetch("https://sports-discord.fly.dev/api/topics", {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(newTopic),
-    //     })
-    //     .catch(error => {
-    //       window.alert(error);
-    //       return;
-    //     });
-      
-    //     setForm({ topic: "", comments: "", image: "" });
-    //     navigate("/");
-    //   }
-      async function onSubmit(e) {
-        console.log(setTopics)
-        e.preventDefault()
+  // async function onSubmit(e) {
+  //     e.preventDefault();
 
+  //     const newTopic = { ...form };
 
-        const newTopic = { ...form };
+  //     await fetch("https://sports-discord.fly.dev/api/topics", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify(newTopic),
+  //     })
+  //     .catch(error => {
+  //       window.alert(error);
+  //       return;
+  //     });
 
-       const update = await axios.post(`http://localhost:4000/api/topics`, newTopic);
-  
-  
-       setForm({ topic: "", comments: "", image: "" });
-       navigate("/");
-       }
+  //     setForm({ topic: "", comments: "", image: "" });
+  //     navigate("/");
+  //   }
+  async function onSubmit(e) {
+    console.log(setTopics);
+    e.preventDefault();
 
+    const newTopic = { ...form };
 
-
-     
-
-     
-
-    // This following section will display the form that takes the input from the user.
-    return (
-      <div>
-        <h3 className="titleLine">Create-A-Topic</h3>
-        <form onSubmit={onSubmit}  >
-          <div className="form-group">
-            <label htmlFor="topic">Topic</label>
-            <input
-              type="text"
-              className="form-control"
-              id="topic"
-              value={form.topic}
-              onChange={(e) => updateForm({ topic: e.target.value })}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="position">comments</label>
-            <input
-              type="text"
-              className="form-control"
-              id="comments"
-              value={form.comments}
-              onChange={(e) => updateForm({ comments: e.target.value })}
-            />
-          </div>
-          <div className="form-group">
-            <label >image</label>
-            <input
-              type="text"
-              className="form-control"
-              id="image"
-              value={form.image}
-              onChange={(e) => updateForm({ image: e.target.value })}
-            />
-          </div>
-          
-          <div className="form-group">
-            <input
-              type="submit"
-              value="Create Topic"
-              className="pointer"
-            />
-          </div>
-        </form>
-      </div>
+    const update = await axios.post(
+      `http://localhost:4000/api/topics`,
+      newTopic
     );
-   }
-   
+
+    setForm({ topic: "", comments: "", image: "" });
+    navigate("/");
+  }
+
+  // This following section will display the form that takes the input from the user.
+  return (
+    <div>
+      <form onSubmit={onSubmit}>
+        <div className="create-form">
+          <div className="create-form-vertical">
+            <h3 className="titleLine">
+              Create a <span className="create-topic">Topic</span>
+            </h3>
+            <div className="create-form-group">
+              <label htmlFor="topic">Topic</label>
+              <input
+                type="text"
+                className="form-control"
+                id="topic"
+                value={form.topic}
+                onChange={(e) => updateForm({ topic: e.target.value })}
+                placeholder="add topic"
+              />
+            </div>
+            <div className="create-form-group">
+              <label htmlFor="comments">Comments</label>
+              <input
+                type="text"
+                className="form-control"
+                id="comments"
+                value={form.comments}
+                onChange={(e) => updateForm({ comments: e.target.value })}
+                placeholder="add comments"
+              />
+            </div>
+            <div className="create-form-group">
+              <label htmlFor="image">Image</label>
+
+              <input
+                type="text"
+                className="form-control"
+                id="image"
+                value={form.image}
+                onChange={(e) => updateForm({ image: e.target.value })}
+                placeholder="upload image"
+              />
+            </div>
+          </div>
+          <div className="form-group">
+            <button className="create-button" type="submit">
+              Create Topic
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  );
+}
