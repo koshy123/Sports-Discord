@@ -17,26 +17,6 @@ export default function Create({ topics, setTopics }) {
     });
   }
 
-  // async function onSubmit(e) {
-  //     e.preventDefault();
-
-  //     const newTopic = { ...form };
-
-  //     await fetch("https://sports-discord.fly.dev/api/topics", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify(newTopic),
-  //     })
-  //     .catch(error => {
-  //       window.alert(error);
-  //       return;
-  //     });
-
-  //     setForm({ topic: "", comments: "", image: "" });
-  //     navigate("/");
-  //   }
   async function onSubmit(e) {
     console.log(setTopics);
     e.preventDefault();
@@ -53,7 +33,7 @@ export default function Create({ topics, setTopics }) {
     navigate("/");
   }
 
-  // This following section will display the form that takes the input from the user.
+
   return (
     <div>
       <form onSubmit={onSubmit}>
