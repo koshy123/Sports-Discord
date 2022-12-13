@@ -25,7 +25,7 @@ export default function Create({ topics, setTopics }) {
     const newTopic = { ...form };
 
     const update = await axios.post(
-      'http://localhost:4000/api/topics',
+      'https://sports-discord.fly.dev/api/topics',
       newTopic
     );
 
