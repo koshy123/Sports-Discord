@@ -44,7 +44,7 @@ function App() {
           />
         </Routes>
       </main>
-      <footer className="bottom">2022</footer>
+      <footer className="bottom">CopyRight@2022</footer>
     </div>
   );
 }
