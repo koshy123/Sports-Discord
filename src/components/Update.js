@@ -41,7 +41,7 @@ function updateForm(value) {
      image: form.image,
    };
    console.log(editedTopic)
-  const update = await axios.put(`http://localhost:4000/api/topics/${params.topicId}`, editedTopic );
+  const update = await axios.put(`https://sports-discord.fly.dev/api/topics${params.topicId}`, editedTopic );
   setTopics(update.data)
   navigate("/");
   }
@@ -50,7 +50,7 @@ function updateForm(value) {
   async function onPress(e) {
 
     e.preventDefault();
-   const update = await axios.put(`http://localhost:4000/api/topics/addComment/${params.topicId}` , {comment});
+   const update = await axios.put(`https://sports-discord.fly.dev/api/topics/addComment/${params.topicId}` , {comment});
    console.log(update.data)
    setTopics(update.data)
    setComment('')

@@ -14,7 +14,7 @@ function App() {
 
   const getTopics = {
     method: "GET",
-    url: "http://localhost:4000/api/topics/",
+    url: "https://sports-discord.fly.dev/api/topics",
   };
   useEffect(() => {
     axios
