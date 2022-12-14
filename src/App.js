@@ -2,7 +2,6 @@ import "./css/App.css";
 import { Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import About from "./components/About";

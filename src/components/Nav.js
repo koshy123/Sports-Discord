@@ -16,7 +16,7 @@ function Nav() {
         }}
       >
         <video className="logo" src={Logo} autoPlay muted loop></video>
-        <span className="logoName">Sports Dicsord</span>
+        <span className="logoName">Sports Discord</span>
       </Link>
       <div style={{ display: "flex", gap: "3rem" }}>
         <Link className="nav-titles" to="/">

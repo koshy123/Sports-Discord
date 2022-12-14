@@ -65,21 +65,17 @@
 .nameTopic {
   color: white;
 }
-
 .square {
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
-
 .bottom {
   position: fixed;
-
   bottom: 0;
   width: 100%;
   background-color: #110426;
   color: white;
   padding: 20px;
 }
-
 @media screen and (max-width: 600px) {
   .main-title {
     color: white;
