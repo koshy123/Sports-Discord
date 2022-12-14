@@ -43,7 +43,7 @@ This code we got help with a token and also in office hours. To make the page fu
        }
 ```
 
-### Contribution Guidelines
+### Testing
 -If you are able to see crud functionality ,and the data changes. Then the app is functional. 
 
 ### Contribution Guidelines

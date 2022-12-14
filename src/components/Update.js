@@ -2,21 +2,16 @@ import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import axios from "axios";
 
-
 export default function Update({setTopics}) {
  const params = useParams();
  const navigate = useNavigate();
-
  const [form, setForm] = useState({
    topic: "",
    comments: "",
    image: "",
  });
-
  const [comment, setComment] = useState("");
-
-
-function updateForm(value) {
+ function updateForm(value) {
    return setForm((prev) => {
      return { ...prev, ...value };
    });
@@ -24,43 +19,30 @@ function updateForm(value) {
 
  async function handleDelete (event) {
   event.preventDefault()
-
-  
   const topics = await axios.delete(`https://sports-discord.fly.dev/api/topics/${params.topicId}`);
    setTopics(topics.data)
    navigate('/')
 }
 
-
  async function onSubmit(e) {
-
    e.preventDefault();
    const editedTopic = {
      topic: form.topic,
      comments: form.comments,
      image: form.image,
    };
-   console.log(editedTopic)
   const update = await axios.put(`https://sports-discord.fly.dev/api/topics/${params.topicId}`, editedTopic );
   setTopics(update.data)
   navigate("/");
   }
 
-  
   async function onPress(e) {
-    console.log({comment})
-    e.preventDefault();
+   e.preventDefault();
    const update = await axios.put(`https://sports-discord.fly.dev/api/topics/addComment/${params.topicId}` , {comment});
-   console.log(update.data)
    setTopics(update.data)
    setComment('')
    }
  
-
-
-
-
-  
  return (
    <div>
      <p className="topicTitle">Edit Topic</p>
@@ -110,9 +92,6 @@ function updateForm(value) {
                 <button className="buttonTopic" onClick={handleDelete}>🗑️</button>
         </div>
      </form>
-
-
- 
   <div className="form-group">
          <label >comments: </label>
          <input
@@ -124,12 +103,7 @@ function updateForm(value) {
            placeholder="comments"
          />
        </div>
-
-
-  <button className="clicksbutton" onClick={e => onPress(e)}> Click</button>
-    
-
-
+      <button className="clicksbutton" onClick={e => onPress(e)}> Click</button>
    </div>
  );
 }

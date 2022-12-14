@@ -4,44 +4,37 @@
   font-size: 30px;
   font-weight: bold;
 }
-
 .create-form {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
 }
-
 @media (min-width: 640px) {
   .create-form {
     flex-direction: row;
   }
 }
-
 .create-form-vertical {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
 .create-form-group {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-
 .create-form-group label {
   text-align: left;
   width: 35%;
 }
-
 .create-form-group input {
   border-radius: 50px;
   padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
-
 .create-form-group input::placeholder {
   color: black;
 }
@@ -56,7 +49,6 @@
   transition: transform 250ms ease-in-out;
   border: none;
 }
-
 .create-button:hover {
   background-color: #25005f;
   transform: scale(1.25);

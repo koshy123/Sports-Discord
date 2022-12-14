@@ -4,13 +4,10 @@
     justify-content: space-around;
     font-size: 60px;
     background-color: #090017;
-   
     left: 0;
     bottom: 0;
   }
-  
   .logo{
-    
     top: 1px;
     left: 125px;
     height: 22px;
@@ -25,5 +22,3 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
   }
-
-  
