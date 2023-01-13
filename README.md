@@ -49,6 +49,7 @@ This code we got help with a token and also in office hours. To make the page fu
 ### Contribution Guidelines
 
 [front-end-deployed](https://project3-front-end.vercel.app/)
+
 [back-end-deployed](https://sports-discord.fly.dev/api/topics)
 [back-end-github](https://github.com/koshy123/project3-back-end)
 [front-end-github](https://github.com/koshy123/project3-front-end)
