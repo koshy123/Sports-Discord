@@ -32,8 +32,10 @@ function Home({ topics, setTopics }) {
         <div className="subtitle3">share, and just talk about sport</div>
         <div className="subtitle4">organised into topic-based themes</div>
       </div>
+      <div className="create_format">
       <Create setTopics={setTopics} />
       <div className="photos">{allTopics}</div>
+      </div>
     </>
   );
 }
