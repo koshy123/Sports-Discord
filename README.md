@@ -49,7 +49,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react
 
 
 
-### As User
+## As User
 As an user, I can add tew topics to discuss.
 As an user, I can edit existing topics.
 As an user, I can delete a topic.
@@ -62,7 +62,7 @@ As an user, I can add an image top the topic and leaves notes on the topic.
 
 
 
-### Code Example
+## Code Example
 
 Lines 44-43 in src/Create.js.
 github-frontend
@@ -82,10 +82,13 @@ This code we got help with a token and also in office hours. To make the page fu
        }
 ```
 
-### Testing
--If you are able to see ALL crud functionality ,and the data changes on the screen. Then the app is fully functional and has no issues. Otherwise, please contact the host of this repository. 
+## Testing
+If you are able to see ALL crud functionality ,and the data changes on the screen. Then the app is fully functional and has no issues. Otherwise, please contact the host of this repository. 
 
 
+## Future Features 
+
+## Project Management 
 
 
 ### Authors
