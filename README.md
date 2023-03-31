@@ -4,9 +4,12 @@
 <div align="center">A web-based discussion board tool by <strong>Jeffrey Koshy</strong>, <strong>Humza Zafarullah</strong>, and <strong>Max Bondar</strong> to facilitate the discussion of sports.
 <br></br>
 
-![example of layout](https://files.slack.com/files-pri/T0351JZQ0-F04EY5S8BD2/2.png)
 
 [wireframe](https://media.git.generalassemb.ly/user/45445/files/8629127f-f10e-4cad-be99-d488d6495734)
+
+## Project Overview
+The Sports-Discord was built for sports fans to discussion topics that are near and dear to them.
+
 
 ### Getting Started
 
