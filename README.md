@@ -1,7 +1,7 @@
 
 # Sports-Discord
 
-<div align="center">A web-based discussion tool by <strong>Jeffrey Koshy</strong>, <strong>Humza Zafarullah</strong>, and <strong>Max Bondar</strong> to facilitate the job searching process.
+<div align="center">A web-based discussion board tool by <strong>Jeffrey Koshy</strong>, <strong>Humza Zafarullah</strong>, and <strong>Max Bondar</strong> to facilitate the discussion of sports.
 <br></br>
 
 ![example of layout](https://files.slack.com/files-pri/T0351JZQ0-F04EY5S8BD2/2.png)
