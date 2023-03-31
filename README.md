@@ -92,18 +92,21 @@ For future features, we would like to add an user authentication with possibly f
 ## Project Management 
 We followed the proper practices of SCRUM and Agile development process. We would meet daily to work on projects and shared ideas. Everyday we would have a plan and try our hardest to accomlish the goals we set for ourselves.
 
-### Authors
+## Issues and Resolutions 
+We did have issues when it came to using git to merge branches and upload to github. We ran into issues where there were so many conflicts that it messed up our work days and made us wary to do work without everyone present. However, we fixed this by dividing up responsibilites and working on seperate branches. This overall was a great learning experience to work in a real time. 
+
+## Authors
 + @Bigs55stock - Humza Zafarullah
 + @Max12345-ally - Max Bondar
 + @koshy123 - Jeffrey Koshy
 
 
-### Acknowledgments
-[David Magbee](https://www.linkedin.com/in/davidmagbee/)
-[Jan Horak](https://www.linkedin.com/in/jan-horak/)
-[Alondra Maldonado](https://www.linkedin.com/in/alondra-maldonado-0a0958183/)
-[Hayk Mnatsakanyan](https://www.linkedin.com/in/haykmn/)
-[Katharyn Benn](https://www.linkedin.com/in/katharynbenn/)
+## Acknowledgments
++ [David Magbee](https://www.linkedin.com/in/davidmagbee/)
++ [Jan Horak](https://www.linkedin.com/in/jan-horak/)
++ [Alondra Maldonado](https://www.linkedin.com/in/alondra-maldonado-0a0958183/)
++ [Hayk Mnatsakanyan](https://www.linkedin.com/in/haykmn/)
++ [Katharyn Benn](https://www.linkedin.com/in/katharynbenn/)
 
 
 
