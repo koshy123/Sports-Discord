@@ -38,27 +38,35 @@ Vercel is the most accessible platform to deploy websites. By connecting the ** 
 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width=10% height=10%> 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width=10% height=10%>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width=10% height=10%>
+<img src="https://user-images.githubusercontent.com/47038229/229183825-ec6b2069-2110-423b-b508-23d343c99cc9.png" width=10% height=10%>
 </div>
 
 
+
 ## Wireframe
-[wireframe](https://media.git.generalassemb.ly/user/45445/files/8629127f-f10e-4cad-be99-d488d6495734)
+<img src= "https://user-images.githubusercontent.com/47038229/229177241-01b7ade6-ef25-4f03-ac93-9ff6a6551b59.png" />
 
 
-### Contributing
-In order to make edits to our code, one would first need to run npm i.
-The create button is in the Create.js file. This is on the home page. 
-The update button is in the Update.js. 
-The delete button is in the Update.js file.
+
+
+### As User
+As an user, I can add tew topics to discuss.
+As an user, I can edit existing topics.
+As an user, I can delete a topic.
+As an user, I can view all current topics. 
+As an user, I can add an image top the topic and leaves notes on the topic.
+
+
+
 
 
 
 
 ### Code Example
 
-Lines 44-43 in Create.js.
+Lines 44-43 in src/Create.js.
 github-frontend
-it is in src folder
+
 
 This code we got help with a token and also in office hours. To make the page function live, without needing to refresh the page after making a change.
 ```
@@ -75,31 +83,9 @@ This code we got help with a token and also in office hours. To make the page fu
 ```
 
 ### Testing
--If you are able to see crud functionality ,and the data changes. Then the app is functional. 
-
-### Contribution Guidelines
-
-[front-end-deployed](https://project3-front-end.vercel.app/)
-
-[back-end-deployed](https://sports-discord.fly.dev/api/topics)
-[back-end-github](https://github.com/koshy123/project3-back-end)
-[front-end-github](https://github.com/koshy123/project3-front-end)
+-If you are able to see ALL crud functionality ,and the data changes on the screen. Then the app is fully functional and has no issues. Otherwise, please contact the host of this repository. 
 
 
-### Built With
-Front-End
--Html
--Css
--Javascript
--React
--react-router-dom
--axios 
--cors
-
-
-### Versioning
--Vercel
-For front end deployment. 
 
 
 ### Authors
@@ -113,20 +99,5 @@ For front end deployment.
 
 ### Acknowledgments
 
-David, Alo, Jan, Hayk , Katharyn
+David, Alo, Jan, Hayk, Katharyn
 
-
-### Front-end planning
-
-December 9th
-We are building out our front end today. Yesterday we were able to deploy the front-end and back-end while also displaying data.
-
-Today we are making the front page look nicer and building out the routes. Max and Humza are working on the front end routes and dsign right now. While I work with Postman to make sure our data nicer on the API. Before lunch we will plan how to attach the CRUD functionality to the buttons as well
-
-December 10th
-Dividing up our roles. Max is looking up some UX features and how to make our app look nicer. Jeffrey is working on the CRUD functionality to work on the page, with assistance from Humza. 
-
-
-December 11th
-Questions - Allow changes to happen live, without refreshing the page.
-We also want the comments to be an array, so that we can add and delete comments in the array.
