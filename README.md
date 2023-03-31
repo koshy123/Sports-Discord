@@ -16,13 +16,30 @@ The Sports-Discord was built by sports fans and for sports fans. To  facilitate 
 + The front-end is deployed on Vercel: [here]([the-dev-hub.vercel.app](https://project3-front-end.vercel.app/))
 + The associated back-end repository can be found: [here](https://github.com/koshy123/project3-back-end) 
 
-### Getting Started
+## Installation
 
-This project exists so that is can be interactive among sports fans. They can discuss hot topic issues and share their opinion to others with comments. 
-The front page will do a GET call to do an axious fetch of all the live topics. 
+1. Clone this respository to your desktop.
+2. Run `npm i` to download required dependencies.
+3. Run `npm start` to run localhost.
+4. Work off a new git branch and push up any changes you wish to be displayed.
+5 Wait for approval from the host if changes were aproved or denied.
 
 
-The front page has a create button which can create a new topic with a comment and image. When a user clicks on the image, they are directed to a page, where they can make live updates
+## Deployment
+The front-end of this application uses ReactJS as a framwork to quicly have our Javscript application up and running. Best practices is used in naming variables and components. Below are technologies use in the front-end.
+
+### Vercel
+Vercel is the most accessible platform to deploy websites. By connecting the ** your GitHub repository** to Vercel, you can simply deploy the main branch to Vercel domains — and it does all the heavy lifting for you. **(Julian Wallis)**
+
+## Technologies
+<div display="flex">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width=10% height=10%>
+<img
+src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" width=10% height=10%> 
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width=10% height=10%>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width=10% height=10%>
+</div>
+
 
 ## Wireframe
 [wireframe](https://media.git.generalassemb.ly/user/45445/files/8629127f-f10e-4cad-be99-d488d6495734)
