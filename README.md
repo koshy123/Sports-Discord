@@ -50,11 +50,11 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react
 
 
 ## As User
-As an user, I can add tew topics to discuss.
-As an user, I can edit existing topics.
-As an user, I can delete a topic.
-As an user, I can view all current topics. 
-As an user, I can add an image top the topic and leaves notes on the topic.
++ As an user, I can add tew topics to discuss.
++ As an user, I can edit existing topics.
++ As an user, I can delete a topic.
++ As an user, I can view all current topics. 
++ As an user, I can add an image and notes to the topic I selected.
 
 
 
@@ -87,17 +87,15 @@ If you are able to see ALL crud functionality ,and the data changes on the scree
 
 
 ## Future Features 
+For future features, we would like to add an user authentication with possibly firebase, so one can have there name next to the comment they left or topic created. Also, then only aythorized users can make edits.
 
 ## Project Management 
-
+We followed the proper practices of SCRUM and Agile development process. We would meet daily to work on projects and shared ideas. Everyday we would have a plan and try our hardest to accomlish the goals we set for ourselves.
 
 ### Authors
-@Bigs55stock   
--Humza Zafarullah
-@Max12345-ally    
--Max Bondar
-@koshy123     
--Jeffrey Koshy
++ @Bigs55stock - Humza Zafarullah
++ @Max12345-ally - Max Bondar
++ @koshy123 - Jeffrey Koshy
 
 
 ### Acknowledgments
