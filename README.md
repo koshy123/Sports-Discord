@@ -98,6 +98,12 @@ This code we got help with a token and also in office hours. To make the page fu
 
 
 ### Acknowledgments
+[David Magbee](https://www.linkedin.com/in/davidmagbee/)
+[Jan Horak](https://www.linkedin.com/in/jan-horak/)
+[Alondra Maldonado](https://www.linkedin.com/in/alondra-maldonado-0a0958183/)
+[Hayk Mnatsakanyan](https://www.linkedin.com/in/haykmn/)
+[Katharyn Benn](https://www.linkedin.com/in/katharynbenn/)
 
-David, Alo, Jan, Hayk, Katharyn
+
+
 
